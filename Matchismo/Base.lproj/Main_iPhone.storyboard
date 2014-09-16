@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Heg-sb-ZVx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pZL-sq-Bq3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="mnB-ef-BMs">
-            <objects>
-                <tabBarController definesPresentationContext="YES" id="Heg-sb-ZVx" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="lp3-bt-Z9q">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="pZL-sq-Bq3" kind="relationship" relationship="viewControllers" id="IYI-2g-hEQ"/>
-                        <segue destination="dKE-cG-uLw" kind="relationship" relationship="viewControllers" id="REl-3w-fum"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0B-Jw-edp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-898" y="32"/>
-        </scene>
-        <!--Playing Card Game View Controller - Playing Cards-->
+        <!--Playing Cards-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PlayingCardGameViewController" sceneMemberID="viewController">
@@ -37,7 +19,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-P4-tQO">
                                 <rect key="frame" x="20" y="452" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ReDeal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,7 +29,6 @@
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vOz-TD-0ZM">
                                 <rect key="frame" x="187" y="452" width="113" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="2-Card"/>
                                     <segment title="3-Card"/>
@@ -61,7 +41,6 @@
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-EY-Pb6">
                                 <rect key="frame" x="0.0" y="65" width="320" height="379"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -71,7 +50,6 @@
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEO-GP-AC8">
                                 <rect key="frame" x="20" y="490" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -115,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="558" y="-384"/>
         </scene>
-        <!--Navigation Controller - Playing Cards-->
+        <!--Playing Cards-->
         <scene sceneID="hPv-Xo-L9S">
             <objects>
                 <navigationController definesPresentationContext="YES" id="pZL-sq-Bq3" sceneMemberID="viewController">
@@ -131,126 +109,14 @@
             </objects>
             <point key="canvasLocation" x="-139" y="-384"/>
         </scene>
-        <!--Set Card Game View Controller - Set-->
-        <scene sceneID="zfT-h0-bac">
-            <objects>
-                <viewController id="TsM-wl-Wl2" customClass="SetCardGameViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9mS-3C-Xe1"/>
-                        <viewControllerLayoutGuide type="bottom" id="GxG-eH-cYQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="69I-cz-6gj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-Rg-34U">
-                                <rect key="frame" x="20" y="490" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izg-w0-8Wk">
-                                <rect key="frame" x="20" y="452" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ReDeal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchReDealButton:" destination="TsM-wl-Wl2" eventType="touchUpInside" id="Q73-IJ-i7q"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPC-y2-PFI">
-                                <rect key="frame" x="0.0" y="65" width="320" height="379"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="7iK-ec-X2t" appends="YES" id="VaG-TE-vNx"/>
-                                    <outletCollection property="gestureRecognizers" destination="vh6-Is-omp" appends="YES" id="kgg-tq-h3d"/>
-                                </connections>
-                            </view>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuf-yw-ayc">
-                                <rect key="frame" x="270" y="452" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgq-zP-xYJ">
-                                <rect key="frame" x="270" y="452" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchAddCardsButton:" destination="TsM-wl-Wl2" eventType="touchUpInside" id="nyc-rs-g3W"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="d5E-Rg-34U" firstAttribute="leading" secondItem="69I-cz-6gj" secondAttribute="leading" constant="20" symbolic="YES" id="EEu-ke-MkU"/>
-                            <constraint firstItem="cPC-y2-PFI" firstAttribute="top" secondItem="9mS-3C-Xe1" secondAttribute="bottom" constant="1" id="GVQ-wE-ylu"/>
-                            <constraint firstItem="uuf-yw-ayc" firstAttribute="top" secondItem="cPC-y2-PFI" secondAttribute="bottom" constant="8" symbolic="YES" id="IM7-cq-HJO"/>
-                            <constraint firstAttribute="trailing" secondItem="Fgq-zP-xYJ" secondAttribute="trailing" constant="20" symbolic="YES" id="Xma-08-JVe"/>
-                            <constraint firstAttribute="trailing" secondItem="cPC-y2-PFI" secondAttribute="trailing" id="YaY-PZ-55p"/>
-                            <constraint firstItem="cPC-y2-PFI" firstAttribute="leading" secondItem="69I-cz-6gj" secondAttribute="leading" id="YlL-Or-jEi"/>
-                            <constraint firstItem="GxG-eH-cYQ" firstAttribute="top" secondItem="d5E-Rg-34U" secondAttribute="bottom" constant="20" symbolic="YES" id="dR6-FA-96y"/>
-                            <constraint firstItem="d5E-Rg-34U" firstAttribute="top" secondItem="Izg-w0-8Wk" secondAttribute="bottom" constant="8" symbolic="YES" id="dVH-pF-L5B"/>
-                            <constraint firstItem="Izg-w0-8Wk" firstAttribute="leading" secondItem="d5E-Rg-34U" secondAttribute="leading" id="eMp-SN-JnZ"/>
-                            <constraint firstItem="Fgq-zP-xYJ" firstAttribute="baseline" secondItem="uuf-yw-ayc" secondAttribute="baseline" id="grN-jf-qGv"/>
-                            <constraint firstItem="Fgq-zP-xYJ" firstAttribute="leading" secondItem="uuf-yw-ayc" secondAttribute="leading" id="k5j-I4-5FS"/>
-                            <constraint firstItem="Izg-w0-8Wk" firstAttribute="baseline" secondItem="uuf-yw-ayc" secondAttribute="baseline" id="nMU-hE-LKI"/>
-                            <constraint firstItem="Izg-w0-8Wk" firstAttribute="top" secondItem="cPC-y2-PFI" secondAttribute="bottom" constant="8" symbolic="YES" id="rNG-Yi-I5n"/>
-                            <constraint firstItem="d5E-Rg-34U" firstAttribute="centerX" secondItem="cPC-y2-PFI" secondAttribute="centerX" id="wcu-eO-Nek"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Set" id="IYG-Gg-Sza"/>
-                    <navigationItem key="navigationItem" id="DMJ-hZ-CSd"/>
-                    <connections>
-                        <outlet property="addCardsButton" destination="Fgq-zP-xYJ" id="y7v-PB-2q4"/>
-                        <outlet property="gridView" destination="cPC-y2-PFI" id="wir-vR-eef"/>
-                        <outlet property="reDealButton" destination="Izg-w0-8Wk" id="ZJe-yE-oYT"/>
-                        <outlet property="scoreLabel" destination="d5E-Rg-34U" id="Uhe-og-jwG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GS6-ty-vvW" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="7iK-ec-X2t">
-                    <connections>
-                        <action selector="gatherCardsIntoPile:" destination="TsM-wl-Wl2" id="v7G-od-jDE"/>
-                    </connections>
-                </pinchGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="vh6-Is-omp">
-                    <connections>
-                        <action selector="panCardPile:" destination="TsM-wl-Wl2" id="lF3-5b-OhE"/>
-                    </connections>
-                </panGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="550" y="373"/>
-        </scene>
-        <!--Navigation Controller - Set-->
-        <scene sceneID="31b-S6-B3X">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="dKE-cG-uLw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Set" id="QPu-Lc-nQ4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yNe-Rc-IVQ">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="TsM-wl-Wl2" kind="relationship" relationship="rootViewController" id="8sy-YZ-pfd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cq-Bo-r3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-139" y="373"/>
-        </scene>
     </scenes>
-    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
